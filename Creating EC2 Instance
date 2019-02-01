@@ -1,7 +1,7 @@
 [root@ip-172-31-31-51 terraform-lab]# cat ec2.tf
 provider "aws" {
-        access_key = "AKIAJRFRN4NAQPF5YRNA"
-        secret_key = "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"
+        access_key = "Access Key"
+        secret_key = "Secret Key"
         region = "us-east-2"
         profile = "default"
 }
@@ -15,8 +15,8 @@ resource "aws_instance" "example" {
         tags {
                 Name = "terraform-example"
         }
-        key_name = "Praveen_Ohio"
-        vpc_security_group_ids = ["sg-09db2f44a9f642325"]
+        key_name = "KeyPair Name"
+        vpc_security_group_ids = ["Security Group ID"]
 }
 
 # Printing the public of the server
